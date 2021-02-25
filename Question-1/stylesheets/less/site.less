@@ -1,0 +1,212 @@
+//========= VARIABLES ======
+
+@main-color: #7ab51d;
+@second-color: #f49e00;
+@cta-color: #f49c00;
+
+@white: #ffffff;
+@white-grey: #e1e1e1;
+@grey: #aaaaaa;
+
+
+// FONT SIZE
+@font-xsm: 0.68rem;
+@font-sm: 0.8rem;
+@font-base: 1rem;
+@font-md: 1.25rem;
+@font-lg: 1.4rem;
+@font-xl: 1.6rem;
+@font-2xl: 1.8rem;
+@font-3xl: 2rem;
+@font-4xl: 2.2rem;
+@font-5xl: 2.5rem;
+@font-6xl: 2.8rem;
+
+
+// MEDIA QUERIES 
+@mq-1200: ~"only screen and (max-width: 1200px)";
+@mq-768: ~"only screen and (max-width: 768px)";
+@mq-550: ~"only screen and (max-width: 550px)";
+
+
+// IMAGE PATH
+@imagePath: "../../img/";
+
+
+// FONT FAMILY
+.raleway { font-family: 'Raleway', sans-serif; }
+.roboto {  font-family: 'Roboto', sans-serif; }
+
+
+// BASE
+h1,h2,h3 {
+    .raleway;
+}
+
+p {
+    .roboto;
+}
+
+.p {
+    .roboto;
+    font-size: @font-base;
+    &--xsm {font-size: @font-xsm;}
+    &--white {color: @white; }
+    &--center {text-align: center; }
+    &--light {font-weight: 300; }
+}
+
+#site-container {
+    position: relative;
+    min-width: 340px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+// UTILS
+.center-x-y {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.shadow {
+    box-shadow: 4px 3px 4px rgba(0,0,0,0.2);
+}
+
+// ================= COMPONENTS =======================
+
+.form {
+    &--separate {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    &__element {}
+    &__input {
+        padding: 0.9rem 1rem;
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-radius: 5px;
+        font-weight: 300;
+        box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6);
+        &::placeholder {
+            .roboto;
+            text-align: center;
+            color:rgb(155, 155, 155);
+            font-size: @font-md;
+            @media @mq-550 {
+                font-size: @font-base;
+            }
+        }
+        &--white {
+            background-color: white;
+            color:rgb(155, 155, 155);
+        }
+    }
+}
+
+.modal {
+    .shadow;
+    &--max-w {
+        max-width: 560px;
+    }
+    &__hook {
+        .shadow;
+        background-color: @white;
+        position: absolute;
+        padding: 1rem 1.5rem;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 0;
+    }
+    &__wrapper {
+        position: relative;
+        padding: 3.6rem 3.1rem .6rem;
+        border: 4px solid @white-grey;
+        &--main { 
+            background-color: @main-color; 
+            background-position: 0 50px;
+            background-repeat: no-repeat;
+            background-image: url("@{imagePath}bundle-of-flowers.png");
+           
+            @media @mq-550 {background-position: 0 bottom;}
+        }
+        @media @mq-768 { padding: 3.6rem 2rem 1rem; }
+    }
+    &__footer {
+        margin-top: 2rem;
+    }
+    &__countdown {
+        .roboto;
+        font-size: @font-4xl;
+        color: @second-color;
+        text-align: center;
+        font-weight: bold;
+        @media @mq-768 {font-size: @font-xl;}
+    }
+    &__count-msg {
+        text-align: center;
+        color: @grey;
+        margin-bottom: .2rem;
+        @media @mq-768 {font-size: @font-sm;}
+    }
+    &__title {
+        font-size: @font-6xl;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        &--white { color: @white; }
+        @media @mq-550 { font-size: @font-3xl; }
+    }
+    &__subtitle {
+        font-size: @font-base;
+        text-transform: lowercase;
+        font-weight: 300;
+        text-align: center;
+        &--white {color: @white;}
+    }
+}
+
+.btn {
+    .roboto;
+    border: none;
+    font-size: @font-md;
+    background-color: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+
+    &--radius { border-radius: 3px; }
+    &--shadow { .shadow;}
+    &--center {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        @media @mq-550 {
+            width: 100%;
+        }
+    }
+    &--cta {
+        background-color: @cta-color;
+        color: @white;
+        font-weight: bold;
+        padding: 6px 15px;
+    }
+}
+
+

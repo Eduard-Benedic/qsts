@@ -1,0 +1,243 @@
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+.p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+.p--xsm {
+  font-size: 0.68rem;
+}
+.p--white {
+  color: #ffffff;
+}
+.p--center {
+  text-align: center;
+}
+.p--light {
+  font-weight: 300;
+}
+#site-container {
+  position: relative;
+  min-width: 340px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.center-x-y {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.shadow {
+  -webkit-box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.form--separate {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.form__input {
+  padding: 0.9rem 1rem;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  font-weight: 300;
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.form__input::-webkit-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 1.25rem;
+}
+.form__input:-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 1.25rem;
+}
+.form__input::-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 1.25rem;
+}
+.form__input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 1.25rem;
+}
+@media only screen and (max-width: 550px) {
+  .form__input::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  .form__input:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .form__input::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .form__input::placeholder {
+    font-size: 1rem;
+  }
+}
+.form__input--white {
+  background-color: white;
+  color: #9b9b9b;
+}
+.modal {
+  -webkit-box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.modal--max-w {
+  max-width: 560px;
+}
+.modal__hook {
+  -webkit-box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  position: absolute;
+  padding: 1rem 1.5rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0;
+}
+.modal__wrapper {
+  position: relative;
+  padding: 3.6rem 3.1rem .6rem;
+  border: 4px solid #e1e1e1;
+}
+.modal__wrapper--main {
+  background-color: #7ab51d;
+  background-position: 0 50px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/bundle-of-flowers.png");
+}
+@media only screen and (max-width: 550px) {
+  .modal__wrapper--main {
+    background-position: 0 bottom;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .modal__wrapper {
+    padding: 3.6rem 2rem 1rem;
+  }
+}
+.modal__footer {
+  margin-top: 2rem;
+}
+.modal__countdown {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
+  color: #f49e00;
+  text-align: center;
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .modal__countdown {
+    font-size: 1.6rem;
+  }
+}
+.modal__count-msg {
+  text-align: center;
+  color: #aaaaaa;
+  margin-bottom: .2rem;
+}
+@media only screen and (max-width: 768px) {
+  .modal__count-msg {
+    font-size: 0.8rem;
+  }
+}
+.modal__title {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+.modal__title--white {
+  color: #ffffff;
+}
+@media only screen and (max-width: 550px) {
+  .modal__title {
+    font-size: 2rem;
+  }
+}
+.modal__subtitle {
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-weight: 300;
+  text-align: center;
+}
+.modal__subtitle--white {
+  color: #ffffff;
+}
+.btn {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  font-size: 1.25rem;
+  background-color: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  cursor: pointer;
+}
+.btn--radius {
+  border-radius: 3px;
+}
+.btn--shadow {
+  -webkit-box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.btn--center {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 550px) {
+  .btn--center {
+    width: 100%;
+  }
+}
+.btn--cta {
+  background-color: #f49c00;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 6px 15px;
+}
